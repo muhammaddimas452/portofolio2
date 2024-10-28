@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: general-sans-semibold;
+  src: url(./assets/fonts/GeneralSans-Semibold.otf);
+}
+.general-sans-semibold {
+  font-family: general-sans-semibold;
+}
+
+@font-face {
+  font-family: general-sans-medium;
+  src: url(./assets/fonts/GeneralSans-Medium.otf);
+}
+.general-sans-medium {
+  font-family: general-sans-medium;
+}
+
+@font-face {
+  font-family: general-sans-regular;
+  src: url(./assets/fonts/GeneralSans-Regular.otf);
+}
+.general-sans-regular {
+  font-family: general-sans-regular;
+}
+
+@font-face {
+  font-family: general-sans-light;
+  src: url(./assets/fonts/GeneralSans-Light.otf);
+}
+.general-sans-light {
+  font-family: general-sans-light;
+}
+
+@font-face {
+  font-family: clash-display-semibold;
+  src: url(./assets/fonts/ClashDisplay-SemiBold.otf);
+}
+.clash-display-semibold {
+  font-family: clash-display-semibold;
+}
+
+@font-face {
+  font-family: clash-display-light;
+  src: url(./assets/fonts/ClashDisplay-Light.otf);
+}
+.clash-display-light {
+  font-family: clash-display-light;
+}
+
+@font-face {
+  font-family: clash-display-medium;
+  src: url(./assets/fonts/ClashDisplay-Medium.otf);
+}
+.clash-display-medium {
+  font-family: clash-display-medium;
+}
+
+.group-1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.group-2 {
+  z-index: 2;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #3037f7;
+  transition: all 0.5s;
+}
+
+.nav:hover::before {
+  width: 100%;
+}
+
+.footer-nav::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.footer-nav:hover::before {
+  width: 100%;
+}
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
